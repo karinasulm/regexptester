@@ -1,4 +1,4 @@
-# RegExp Tester
+# RegExpTester
 
 This is the first version of a regular expression tester for javaScript.
 
