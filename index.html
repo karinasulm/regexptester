@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Regular Expressions Tester Online For JavaScript</title>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">RexExpTester</a>
+        </div>
+    </div>
+</header>
+<section class="section">
+    <div class="wrapper">
+        <div class="section__inner">
+            <div class="regex">
+                <div class="regex__item">
+                    <p class="regex__title">Regular expression to test:</p>
+                    <input class="regex__input" id="reg" type="text" value="">
+                    <p class="regex__title">String to test:</p>
+                    <textarea class="regex__input" id="str" type="text" value=""></textarea>
+                    <p class="regex__title">Flags</p>
+                    <div class="regex__flags">
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-g" type="checkbox">
+                            <label for="flag-g">g</label>
+                        </div>
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-i" type="checkbox">
+                            <label for="flag-i">i</label>
+                        </div>
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-m" type="checkbox">
+                            <label for="flag-m">m</label>
+                        </div>
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-s" type="checkbox">
+                            <label for="flag-s">s</label>
+                        </div>
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-u" type="checkbox">
+                            <label for="flag-u">u</label>
+                        </div>
+                        <div class="regex__check">
+                            <input class="regex__flag" id="flag-y" type="checkbox">
+                            <label for="flag-y">y</label>
+                        </div>
+                    </div>
+                    <button class="regex__btn" id="btn">Match</button>
+                </div>
+            <div class="regex__item">
+                    <div class="regex__results">
+                        <p class="regex__title">Results:</p>
+                        <div class="regex__result" id="result"></div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__inner">
+            <p>Created by <b>skkaarin</b></p>
+            <div class="footer__social">
+                <a href="https://github.com/skkaarin"><img src="assets/img/github-brands.svg" alt=""></a>
+                <a href="https://codepen.io/skkaarin"><img src="assets/img/codepen-brands.svg" alt=""></a>
+                <a href="https://t.me/skkaarin"><img src="assets/img/telegram-brands.svg" alt=""></a>
+                <a href="https://www.instagram.com/skkaarin/"><img src="assets/img/instagram-brands.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

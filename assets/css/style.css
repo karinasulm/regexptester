@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v2/u-450q2lgwslOqpF_6gQ8kELWwY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v2/u-4k0q2lgwslOqpF_6gQ8kELY7pMf-c.ttf) format('truetype');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #3F4B3B;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #AFBE8F;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  background-color: #3F4B3B;
+  color: #AFBE8F;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  flex: 0 0 auto;
+}
+.header__inner {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(175, 190, 143, 0.4);
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #AFBE8F;
+  text-decoration: none;
+}
+.section {
+  flex: 1 0 auto;
+  padding: 40px 0;
+}
+.section__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.regex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.regex__item {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+.regex__input {
+  font-family: 'Courier Prime', monospace;
+  background-color: #3F4B3B;
+  color: #AFBE8F;
+  width: 100%;
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #AFBE8F;
+  transition: all 0.3s ease;
+  margin: 0 0 10px 0;
+}
+.regex__input::placeholder {
+  color: #a9aca1;
+}
+.regex__input:focus {
+  background-color: #3d4e38;
+}
+textarea.regex__input {
+  height: 400px;
+  resize: none;
+  overflow-y: scroll;
+}
+.regex__btn {
+  font-family: 'Courier Prime', monospace;
+  background-color: #AFBE8F;
+  color: #3F4B3B;
+  text-align: center;
+  padding: 10px 40px;
+  border: 1px solid #AFBE8F;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.regex__btn:hover {
+  background-color: #4b5946;
+  color: #AFBE8F;
+}
+.regex__btn:active {
+  background-color: #576851;
+  color: #AFBE8F;
+}
+.regex__flags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+}
+.regex__title {
+  width: 100%;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+.regex__check {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+.regex__flag {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+.regex__flag + label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.regex__flag + label::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #AFBE8F;
+  z-index: 100;
+  margin: 0 10px 0 0;
+}
+.regex__flag + label::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3F4B3B;
+  z-index: 200;
+  margin: 0 10px 0 0;
+  left: 5px;
+  top: 5px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.regex__flag:checked + label::after {
+  opacity: 1;
+}
+.regex__results {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.regex__result {
+  flex: 1 0 0;
+  width: 100%;
+  border: 1px solid #AFBE8F;
+  padding: 20px;
+  overflow-y: scroll;
+}
+.regex__result p {
+  margin: 0 0 10px 0;
+  padding: 10px 14px;
+  border: 1px solid #AFBE8F;
+}
+.regex__result p.negative {
+  color: #F05F45;
+  border: none;
+  padding: 0;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(175, 190, 143, 0.4);
+}
+.footer__inner img {
+  width: 20px;
+}
