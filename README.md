@@ -1,3 +1,9 @@
 # RegExp Tester
 
-This is a tester for regular expressions (javaScript).
+This is the first version of a regular expression tester for javaScript.
+
+# Featues:
+- Testing regular expressions
+- Choice flags that you want to enable
+- Minimalistic design
+
