@@ -1,3 +1,3 @@
 # RegExp Tester
 
-This is a tester for regular expressions (javaScript).
+This is a regular expression tester for javaScript.
