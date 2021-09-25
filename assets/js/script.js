@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		else {
 			regExp = new RegExp(regValue, flags);
 			let strTemp = str.value.match(regExp) || [];
-			console.log(strTemp);
 			if ( strTemp.length > 0 ) {
 				result.innerHTML = '';
 				for (let i = 0; i < strTemp.length; i++) {
