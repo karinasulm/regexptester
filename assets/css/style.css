@@ -88,6 +88,11 @@ body {
   flex-direction: column;
   margin: 0 0 20px 0;
 }
+@media (max-width: 800px) {
+  .regex__item {
+    width: 100%;
+  }
+}
 .regex__input {
   font-family: 'Courier Prime', monospace;
   background-color: #3F4B3B;
@@ -142,6 +147,11 @@ textarea.regex__input {
   display: flex;
   align-items: center;
   margin: 0 20px 0 0;
+}
+@media (max-width: 400px) {
+  .regex__check {
+    margin: 0 15px 0 0;
+  }
 }
 .regex__flag {
   visibility: hidden;
@@ -204,6 +214,12 @@ textarea.regex__input {
   color: #F05F45;
   border: none;
   padding: 0;
+}
+@media (max-width: 800px) {
+  .regex__result {
+    height: 400px;
+    flex: 1 0 auto;
+  }
 }
 .footer {
   flex: 0 0 auto;
