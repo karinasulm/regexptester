@@ -45,6 +45,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 .header {
   flex: 0 0 auto;
@@ -147,10 +148,11 @@ textarea.regex__input {
   display: flex;
   align-items: center;
   margin: 0 20px 0 0;
+  position: relative;
 }
 @media (max-width: 400px) {
   .regex__check {
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
   }
 }
 .regex__flag {
@@ -192,6 +194,22 @@ textarea.regex__input {
 }
 .regex__flag:checked + label::after {
   opacity: 1;
+}
+.regex__flag--prompt {
+  display: none;
+  position: absolute;
+  width: 110px;
+  background-color: #AFBE8F;
+  color: #3F4B3B;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 20px;
+  bottom: 32px;
+  left: 0;
+  z-index: 100;
+}
+.regex__check:hover .regex__flag--prompt {
+  display: block;
 }
 .regex__results {
   height: 100%;
