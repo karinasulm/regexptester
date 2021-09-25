@@ -18,6 +18,14 @@ background-color: @primarycolor;
 *::-webkit-scrollbar-thumb {
 background-color: @secondarycolor;
 }
+*::selection {
+	color: #fff;
+	background-color: lighten(@primarycolor, 20%);
+}
+*::-moz-selection {
+	color: #fff;
+	background-color: lighten(@primarycolor, 20%);
+}
 html {
 	height: 100%;
 }

@@ -28,6 +28,14 @@
 *::-webkit-scrollbar-thumb {
   background-color: #AFBE8F;
 }
+*::selection {
+  color: #fff;
+  background-color: #6f8468;
+}
+*::-moz-selection {
+  color: #fff;
+  background-color: #6f8468;
+}
 html {
   height: 100%;
 }
