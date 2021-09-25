@@ -22,7 +22,11 @@
             <div class="regex">
                 <div class="regex__item">
                     <p class="regex__title">Regular expression to test:</p>
-                    <input class="regex__input" id="reg" type="text" value="">
+                    <div class="regex__input-wrapper">
+                        <div class="regex__input-leftelem">/</div>
+                        <input class="regex__input" id="reg" type="text" value="">
+                        <div class="regex__input-rightelem">/</div>
+                    </div>
                     <p class="regex__title">String to test:</p>
                     <textarea class="regex__input" id="str" type="text" value=""></textarea>
                     <p class="regex__title">Flags</p>

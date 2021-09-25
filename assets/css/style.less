@@ -82,6 +82,22 @@ body {
 		width: 100%;
 	}
 }
+.regex__input-wrapper {
+	position: relative;
+}
+.regex__input-leftelem,
+.regex__input-rightelem {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 700;
+	top: calc(50% - 16px);
+}
+.regex__input-leftelem {
+	left: 10px;
+}
+.regex__input-rightelem {
+	right: 10px;
+}
 .regex__input {
 	font-family: 'Courier Prime', monospace;
 	background-color: @primarycolor;
@@ -98,6 +114,9 @@ body {
     &:focus {
         background-color: saturate(@primarycolor, 5%);
     }
+}
+.regex__input-wrapper .regex__input {
+	padding: 10px 22px;
 }
 textarea.regex__input {
 	height: 400px;
@@ -208,12 +227,17 @@ textarea.regex__input {
 	border: 1px solid @secondarycolor;
 	padding: 20px;
 	overflow-y: scroll;
-	p {
+	.regex__result-name {
+		border: none;
+		padding: 0;
 		margin: 0 0 10px 0;
+	}
+	.regex__result-elem {
+		margin: 0 0 15px 0;
 		padding: 10px 14px;
 		border: 1px solid @secondarycolor;
 	}
-	p.negative {
+	.regex__result-error {
 		color: @negativecolor;
 		border: none;
 		padding: 0;

@@ -94,6 +94,22 @@ body {
     width: 100%;
   }
 }
+.regex__input-wrapper {
+  position: relative;
+}
+.regex__input-leftelem,
+.regex__input-rightelem {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+  top: calc(50% - 16px);
+}
+.regex__input-leftelem {
+  left: 10px;
+}
+.regex__input-rightelem {
+  right: 10px;
+}
 .regex__input {
   font-family: 'Courier Prime', monospace;
   background-color: #3F4B3B;
@@ -110,6 +126,9 @@ body {
 }
 .regex__input:focus {
   background-color: #3d4e38;
+}
+.regex__input-wrapper .regex__input {
+  padding: 10px 22px;
 }
 textarea.regex__input {
   height: 400px;
@@ -223,12 +242,17 @@ textarea.regex__input {
   padding: 20px;
   overflow-y: scroll;
 }
-.regex__result p {
+.regex__result .regex__result-name {
+  border: none;
+  padding: 0;
   margin: 0 0 10px 0;
+}
+.regex__result .regex__result-elem {
+  margin: 0 0 15px 0;
   padding: 10px 14px;
   border: 1px solid #AFBE8F;
 }
-.regex__result p.negative {
+.regex__result .regex__result-error {
   color: #F05F45;
   border: none;
   padding: 0;

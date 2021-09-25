@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	btn.addEventListener('click', function () {
 		if ( str.value === '' || reg.value === '') {
-			result.innerHTML = '<p class="negative">Please, enter your data for test</p>'
+			result.innerHTML = '<p class="regex__result-error">Please, enter your data for test</p>'
 		}
 		else {
 			regExp = new RegExp(regValue, flags);
@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			if ( strTemp.length > 0 ) {
 				result.innerHTML = '';
 				for (let i = 0; i < strTemp.length; i++) {
-					result.innerHTML += '<p><span>Match ' + (i + 1) + ': </span>' + strTemp[i] + '</p>'
+					result.innerHTML += '<p>Match ' + (i + 1) + ': </p><p class="regex__result-elem">' + strTemp[i] + '</p>'
 				}
 			}
 			else {
-				result.innerHTML = '<p class="negative">no matches</p>'
+				result.innerHTML = '<p class="regex__result-error">No matches</p>'
 			}
 		}
 	});
